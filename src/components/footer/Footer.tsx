@@ -1,10 +1,9 @@
-import React from 'react';
-import styles from './Footer.module.css';
+import { Navbar, Container } from "react-bootstrap";
 
-const Footer: React.FC = () => (
-  <div className={styles.Footer} data-testid="Footer">
-    Footer Component
-  </div>
+const Footer = () => (
+  <Navbar expand="lg" fixed="bottom">
+    <p>Copyright &copy; 2021</p>
+  </Navbar>
 );
 
 export default Footer;

@@ -1,11 +1,15 @@
-import React from 'react';
-import Pump from '../pump/Pump';
-import styles from './MainContainer.module.css';
+import "./MainContainer.module.css";
+import Pump from "../pump/Pump";
+import { Container, Row, Col } from "react-bootstrap";
 
-const MainContainer: React.FC = () => (
-  <div className={styles.MainContainer} data-testid="MainContainer">
-      <Pump/>
-  </div>
+const MainContainer = () => (
+  <Container>
+    <Row>
+      <Col sm={8}>
+        <Pump />
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default MainContainer;
